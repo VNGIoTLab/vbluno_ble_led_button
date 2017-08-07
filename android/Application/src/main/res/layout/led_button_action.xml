@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <TextView
+        android:text="@string/label_led"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblControlLed"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="20dp" />
+
+    <ToggleButton
+        android:text="@string/button_led"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tgbLed"
+        android:checked="false"
+        android:onClick="onClickLed"
+        android:textOff="@string/button_led_off"
+        android:textOn="@string/button_led_on"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="@string/label_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblButton"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:text="@string/label_button_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblButtonValue"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+</LinearLayout>

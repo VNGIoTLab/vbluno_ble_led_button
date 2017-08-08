@@ -26,7 +26,7 @@ public class LedButtonGattAttributes {
     /**
      *  brief      UUID cho các services và characteristic
      */
-    //Bot service gồm 5 characteristics
+    //Service gồm 2 characteristics
     public static final String led_button_service_uuid    = "0000FFF8-0000-1000-8000-00805F9B34FB";
     public static final String led_char_uuid              = "0000FFF9-0000-1000-8000-00805F9B34FB";  //WRITE-uchar
     public static final String button_char_uuid           = "0000FFFA-0000-1000-8000-00805F9B34FB";  //NOTIFY-uchar

@@ -60,7 +60,8 @@ void buttonIsr() {
 
 
 void disconnectionCallback(const Gap::DisconnectionCallbackParams_t *params) {  
-  Serial.println("Disconnect");      
+  Serial.println("Disconnect");  
+  digitalWrite(LED, LOW);         //off led    
   ble.startAdvertising();
 }
 
